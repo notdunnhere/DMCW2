@@ -13,7 +13,6 @@ def main(argv):
 	newfilename = filename.split(".")
 	
 	o = open( newfilename[0] + ".arff",'w')
-	nmax = 0;
 	
 	o.write( "@relation " + newfilename[0] + "\n" )
 	o.write( "@ATTRIBUTE 'emotion' {'Angry', 'Disgust', 'Fear', 'Happy', 'Sad', 'Suprise', 'Neutral'}\n" )
@@ -35,10 +34,7 @@ def main(argv):
 			
 			if( n > nmax):
 				nmax = n
-			
-			
-			
-			print(  )
+		
 
 			o.write( dict[line[0]] + "," + line[3:].replace( " ", "," ) )
 			
