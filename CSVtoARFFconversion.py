@@ -13,6 +13,7 @@ def main(argv):
 	newfilename = filename.split(".")
 	
 	o = open( newfilename[0] + ".arff",'w')
+	nmax = 0;
 	
 	o.write( "@relation " + newfilename[0] + "\n" )
 	o.write( "@ATTRIBUTE 'emotion' {'Angry', 'Disgust', 'Fear', 'Happy', 'Sad', 'Suprise', 'Neutral'}\n" )
@@ -28,18 +29,17 @@ def main(argv):
 		f.readline()
 		o.write( "@data\n" )
 		for line in f:
-			#print( line )
+			firstSplit = line.split( "," );
 			
-			n = line.count(" ", 3)
-			
-			if( n > nmax):
-				nmax = n
-		
-
-			o.write( dict[line[0]] + "," + line[3:].replace( " ", "," ) )
+			if firstSplit[1].count( " " ) != 2303:
+				print( "Error, file has more data in one init" )
+				return
+				
+			o.write( dict[firstSplit[0]] + "," + firstSplit[1].replace( " ", "," ) )
 			
 	o.close()
 	
 
 if __name__ == "__main__":
    main(sys.argv[1:])
+
