@@ -1,0 +1,280 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.NaiveBayes 
+Relation:     fer2017angry-weka.filters.unsupervised.instance.Randomize-S12-weka.filters.supervised.attribute.AttributeSelection-Eweka.attributeSelection.CfsSubsetEval -P 1 -E 1-Sweka.attributeSelection.BestFirst -D 1 -N 5-weka.filters.unsupervised.attribute.RandomSubset-N0.5-S21-weka.filters.unsupervised.instance.RemoveDuplicates-weka.filters.unsupervised.attribute.Remove-R21,23-weka.filters.unsupervised.attribute.Remove-R21,23,25,22,29-weka.filters.unsupervised.attribute.Remove-R21,23,25,22,29,30,31,32,33,34
+Instances:    34056
+Attributes:   33
+              pixel10
+              pixel83
+              pixel298
+              pixel730
+              pixel784
+              pixel797
+              pixel800
+              pixel834
+              pixel849
+              pixel879
+              pixel880
+              pixel892
+              pixel931
+              pixel940
+              pixel961
+              pixel974
+              pixel1040
+              pixel1274
+              pixel1301
+              pixel1346
+              pixel1556
+              pixel1561
+              pixel1661
+              pixel1662
+              pixel1959
+              pixel1967
+              pixel2016
+              pixel2047
+              pixel2144
+              pixel2227
+              pixel2238
+              pixel2295
+              emotion
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Naive Bayes Classifier
+
+                  Class
+Attribute         Angry  Disgust     Fear    Happy      Sad  Suprise  Neutral
+                 (0.86)   (0.14)      (0)      (0)      (0)      (0)      (0)
+==============================================================================
+pixel10
+  mean          109.7704 115.5177        0        0        0        0        0
+  std. dev.      68.5773  69.6788   0.1667   0.1667   0.1667   0.1667   0.1667
+  weight sum       29316     4740        0        0        0        0        0
+  precision            1        1        1        1        1        1        1
+
+pixel83
+  mean          117.0288 119.9907        0        0        0        0        0
+  std. dev.      67.0135  67.1292   0.1667   0.1667   0.1667   0.1667   0.1667
+  weight sum       29316     4740        0        0        0        0        0
+  precision            1        1        1        1        1        1        1
+
+pixel298
+  mean          123.2661 125.9086        0        0        0        0        0
+  std. dev.      64.0186  64.3684   0.1667   0.1667   0.1667   0.1667   0.1667
+  weight sum       29316     4740        0        0        0        0        0
+  precision            1        1        1        1        1        1        1
+
+pixel730
+  mean          122.9589 122.0778        0        0        0        0        0
+  std. dev.      59.2388  59.9336   0.1667   0.1667   0.1667   0.1667   0.1667
+  weight sum       29316     4740        0        0        0        0        0
+  precision            1        1        1        1        1        1        1
+
+pixel784
+  mean          116.1173 112.8122        0        0        0        0        0
+  std. dev.      57.1009  59.6997   0.1667   0.1667   0.1667   0.1667   0.1667
+  weight sum       29316     4740        0        0        0        0        0
+  precision            1        1        1        1        1        1        1
+
+pixel797
+  mean          123.2517 118.6198        0        0        0        0        0
+  std. dev.      55.0619  57.9577   0.1667   0.1667   0.1667   0.1667   0.1667
+  weight sum       29316     4740        0        0        0        0        0
+  precision            1        1        1        1        1        1        1
+
+pixel800
+  mean          115.0915 112.6483        0        0        0        0        0
+  std. dev.      57.6138  60.0015   0.1667   0.1667   0.1667   0.1667   0.1667
+  weight sum       29316     4740        0        0        0        0        0
+  precision            1        1        1        1        1        1        1
+
+pixel834
+  mean          120.3423 115.2614        0        0        0        0        0
+  std. dev.      55.7005  58.4274   0.1667   0.1667   0.1667   0.1667   0.1667
+  weight sum       29316     4740        0        0        0        0        0
+  precision            1        1        1        1        1        1        1
+
+pixel849
+  mean          112.6193 111.9681        0        0        0        0        0
+  std. dev.      58.8806  61.0578   0.1667   0.1667   0.1667   0.1667   0.1667
+  weight sum       29316     4740        0        0        0        0        0
+  precision            1        1        1        1        1        1        1
+
+pixel879
+  mean          112.5515 112.5844        0        0        0        0        0
+  std. dev.      59.6724  60.6434   0.1667   0.1667   0.1667   0.1667   0.1667
+  weight sum       29316     4740        0        0        0        0        0
+  precision            1        1        1        1        1        1        1
+
+pixel880
+  mean          115.8768 114.2091        0        0        0        0        0
+  std. dev.      58.9356  60.2792   0.1667   0.1667   0.1667   0.1667   0.1667
+  weight sum       29316     4740        0        0        0        0        0
+  precision            1        1        1        1        1        1        1
+
+pixel892
+  mean          127.6661  122.642        0        0        0        0        0
+  std. dev.      54.6926  57.5425   0.1667   0.1667   0.1667   0.1667   0.1667
+  weight sum       29316     4740        0        0        0        0        0
+  precision            1        1        1        1        1        1        1
+
+pixel931
+  mean          130.6365   124.83        0        0        0        0        0
+  std. dev.      54.5197  56.5185   0.1667   0.1667   0.1667   0.1667   0.1667
+  weight sum       29316     4740        0        0        0        0        0
+  precision            1        1        1        1        1        1        1
+
+pixel940
+  mean          132.7521 127.8703        0        0        0        0        0
+  std. dev.      53.9473  55.8712   0.1667   0.1667   0.1667   0.1667   0.1667
+  weight sum       29316     4740        0        0        0        0        0
+  precision            1        1        1        1        1        1        1
+
+pixel961
+  mean          116.2926  119.193        0        0        0        0        0
+  std. dev.      74.7187  76.8273   0.1667   0.1667   0.1667   0.1667   0.1667
+  weight sum       29316     4740        0        0        0        0        0
+  precision            1        1        1        1        1        1        1
+
+pixel974
+  mean          128.0045 127.5778        0        0        0        0        0
+  std. dev.      57.3925  57.1069   0.1667   0.1667   0.1667   0.1667   0.1667
+  weight sum       29316     4740        0        0        0        0        0
+  precision            1        1        1        1        1        1        1
+
+pixel1040
+  mean          140.2765  138.357        0        0        0        0        0
+  std. dev.      53.4035  52.9986   0.1667   0.1667   0.1667   0.1667   0.1667
+  weight sum       29316     4740        0        0        0        0        0
+  precision            1        1        1        1        1        1        1
+
+pixel1274
+  mean          159.4662 151.9675        0        0        0        0        0
+  std. dev.       49.045  51.4542   0.1667   0.1667   0.1667   0.1667   0.1667
+  weight sum       29316     4740        0        0        0        0        0
+  precision            1        1        1        1        1        1        1
+
+pixel1301
+  mean          125.9429 125.5065        0        0        0        0        0
+  std. dev.      67.3058  68.8141   0.1667   0.1667   0.1667   0.1667   0.1667
+  weight sum       29316     4740        0        0        0        0        0
+  precision            1        1        1        1        1        1        1
+
+pixel1346
+  mean          119.4061 120.8359        0        0        0        0        0
+  std. dev.      74.0458  75.8177   0.1667   0.1667   0.1667   0.1667   0.1667
+  weight sum       29316     4740        0        0        0        0        0
+  precision            1        1        1        1        1        1        1
+
+pixel1556
+  mean          139.0629 128.4226        0        0        0        0        0
+  std. dev.      53.9331   58.248   0.1667   0.1667   0.1667   0.1667   0.1667
+  weight sum       29316     4740        0        0        0        0        0
+  precision            1        1        1        1        1        1        1
+
+pixel1561
+  mean          138.5509 127.4897        0        0        0        0        0
+  std. dev.      53.5137  56.6741   0.1667   0.1667   0.1667   0.1667   0.1667
+  weight sum       29316     4740        0        0        0        0        0
+  precision            1        1        1        1        1        1        1
+
+pixel1661
+  mean           138.521 127.8023        0        0        0        0        0
+  std. dev.       53.779  56.8808   0.1667   0.1667   0.1667   0.1667   0.1667
+  weight sum       29316     4740        0        0        0        0        0
+  precision            1        1        1        1        1        1        1
+
+pixel1662
+  mean          138.6623 128.6825        0        0        0        0        0
+  std. dev.      53.7362  56.6388   0.1667   0.1667   0.1667   0.1667   0.1667
+  weight sum       29316     4740        0        0        0        0        0
+  precision            1        1        1        1        1        1        1
+
+pixel1959
+  mean          117.2453 113.2042        0        0        0        0        0
+  std. dev.      67.2325  67.1705   0.1667   0.1667   0.1667   0.1667   0.1667
+  weight sum       29316     4740        0        0        0        0        0
+  precision            1        1        1        1        1        1        1
+
+pixel1967
+  mean          116.2521 112.2131        0        0        0        0        0
+  std. dev.      78.2445  78.6613   0.1667   0.1667   0.1667   0.1667   0.1667
+  weight sum       29316     4740        0        0        0        0        0
+  precision            1        1        1        1        1        1        1
+
+pixel2016
+  mean          118.0307  113.303        0        0        0        0        0
+  std. dev.      79.1872  80.2795   0.1667   0.1667   0.1667   0.1667   0.1667
+  weight sum       29316     4740        0        0        0        0        0
+  precision            1        1        1        1        1        1        1
+
+pixel2047
+  mean          129.6017 121.4523        0        0        0        0        0
+  std. dev.      56.5017  56.5948   0.1667   0.1667   0.1667   0.1667   0.1667
+  weight sum       29316     4740        0        0        0        0        0
+  precision            1        1        1        1        1        1        1
+
+pixel2144
+  mean          125.7292 117.3049        0        0        0        0        0
+  std. dev.      59.5477  59.0282   0.1667   0.1667   0.1667   0.1667   0.1667
+  weight sum       29316     4740        0        0        0        0        0
+  precision            1        1        1        1        1        1        1
+
+pixel2227
+  mean          127.5297 119.7947        0        0        0        0        0
+  std. dev.      58.6799  58.4737   0.1667   0.1667   0.1667   0.1667   0.1667
+  weight sum       29316     4740        0        0        0        0        0
+  precision            1        1        1        1        1        1        1
+
+pixel2238
+  mean            125.24 117.9576        0        0        0        0        0
+  std. dev.      59.6967  59.2141   0.1667   0.1667   0.1667   0.1667   0.1667
+  weight sum       29316     4740        0        0        0        0        0
+  precision            1        1        1        1        1        1        1
+
+pixel2295
+  mean          110.2512 105.3135        0        0        0        0        0
+  std. dev.       70.986  72.0878   0.1667   0.1667   0.1667   0.1667   0.1667
+  weight sum       29316     4740        0        0        0        0        0
+  precision            1        1        1        1        1        1        1
+
+
+
+Time taken to build model: 0.29 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       26978               79.2166 %
+Incorrectly Classified Instances      7078               20.7834 %
+Kappa statistic                          0.0527
+Mean absolute error                      0.0759
+Root mean squared error                  0.2122
+Relative absolute error                110.7254 %
+Root relative squared error            114.6854 %
+Total Number of Instances            34056     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.896    0.847    0.867      0.896    0.881      0.053    0.574     0.886     Angry
+                 0.153    0.104    0.191      0.153    0.170      0.053    0.573     0.172     Disgust
+                 0.000    0.000    0.000      0.000    0.000      0.000    ?         ?         Fear
+                 0.000    0.000    0.000      0.000    0.000      0.000    ?         ?         Happy
+                 0.000    0.000    0.000      0.000    0.000      0.000    ?         ?         Sad
+                 0.000    0.000    0.000      0.000    0.000      0.000    ?         ?         Suprise
+                 0.000    0.000    0.000      0.000    0.000      0.000    ?         ?         Neutral
+Weighted Avg.    0.792    0.744    0.773      0.792    0.782      0.053    0.574     0.787     
+
+=== Confusion Matrix ===
+
+     a     b     c     d     e     f     g   <-- classified as
+ 26255  3060     1     0     0     0     0 |     a = Angry
+  4016   723     1     0     0     0     0 |     b = Disgust
+     0     0     0     0     0     0     0 |     c = Fear
+     0     0     0     0     0     0     0 |     d = Happy
+     0     0     0     0     0     0     0 |     e = Sad
+     0     0     0     0     0     0     0 |     f = Suprise
+     0     0     0     0     0     0     0 |     g = Neutral
+
