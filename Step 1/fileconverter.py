@@ -7,6 +7,7 @@ import csv
 import sys
 from time import sleep
 
+#main function
 def main(argv):
 	
 	filename = sys.argv[1]
