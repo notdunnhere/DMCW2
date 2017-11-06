@@ -1,0 +1,131 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.SimpleKMeans -init 0 -max-candidates 100 -periodic-pruning 10000 -min-density 2.0 -t1 -1.25 -t2 -1.0 -N 2 -A "weka.core.EuclideanDistance -R first-last" -I 500 -num-slots 1 -S 10
+Relation:     fer2017fear-weka.filters.unsupervised.instance.Randomize-S78-weka.filters.supervised.attribute.AttributeSelection-Eweka.attributeSelection.CfsSubsetEval -P 1 -E 1-Sweka.attributeSelection.BestFirst -D 1 -N 5-weka.filters.unsupervised.attribute.RandomSubset-N0.5-S21-weka.filters.unsupervised.instance.RemoveDuplicates-weka.filters.unsupervised.attribute.Remove-R45
+Instances:    34066
+Attributes:   44
+              pixel110
+              pixel126
+              pixel209
+              pixel241
+              pixel264
+              pixel267
+              pixel334
+              pixel490
+              pixel527
+              pixel574
+              pixel580
+              pixel722
+              pixel766
+              pixel768
+              pixel903
+              pixel910
+              pixel914
+              pixel939
+              pixel1399
+              pixel1513
+              pixel1532
+              pixel1571
+              pixel1668
+              pixel1788
+              pixel1797
+              pixel1819
+              pixel1842
+              pixel1865
+              pixel1869
+              pixel1899
+              pixel1927
+              pixel1928
+              pixel1951
+              pixel1970
+              pixel1989
+              pixel1997
+              pixel2010
+              pixel2025
+              pixel2033
+              pixel2035
+              pixel2044
+              pixel2089
+              pixel2220
+              pixel2290
+Test mode:    evaluate on training data
+
+
+=== Clustering model (full training set) ===
+
+
+kMeans
+======
+
+Number of iterations: 20
+Within cluster sum of squared errors: 78431.29620619825
+
+Initial starting points (random):
+
+Cluster 0: 27,144,189,217,161,138,2,6,7,8,215,216,3,215,112,40,214,108,211,0,98,98,123,96,93,69,88,88,44,143,176,130,136,218,145,108,27,98,66,82,101,95,102,42
+Cluster 1: 65,158,44,1,71,157,44,126,14,28,101,89,38,72,31,38,72,108,3,26,76,69,70,80,62,56,103,108,111,70,112,115,12,78,102,72,106,110,97,97,90,71,127,98
+
+Missing values globally replaced with mean/mode
+
+Final cluster centroids:
+                       Cluster#
+Attribute   Full Data         0         1
+            (34066.0) (15477.0) (18589.0)
+=========================================
+pixel110     129.2134  153.6881   108.836
+pixel126     136.2762  158.7032  117.6037
+pixel209     143.5943  164.1814  126.4537
+pixel241     111.3181  151.4597   77.8966
+pixel264     152.2898  170.7489   136.921
+pixel267     149.9257  168.7389  134.2621
+pixel334     109.5772  155.5818   71.2742
+pixel490     127.8103   151.533  108.0589
+pixel527     111.1382  159.5187   70.8572
+pixel574     108.6316  156.8452   68.4895
+pixel580      107.073  143.6786   76.5956
+pixel722      110.564  152.5311   75.6226
+pixel766     110.8272  159.2044    70.549
+pixel768     114.6434  158.9478   77.7561
+pixel903     126.3543  152.9941  104.1743
+pixel910     113.9439  162.0976   73.8516
+pixel914     115.0898  157.6225   79.6776
+pixel939     137.9068  156.4662  122.4544
+pixel1399    132.7912  163.0764  107.5761
+pixel1513    138.6109  157.2729  123.0731
+pixel1532    118.9866  165.2511   80.4673
+pixel1571    141.7269  162.9275  124.0755
+pixel1668    135.4857  159.2271  115.7189
+pixel1788    132.6135  155.3216   113.707
+pixel1797    124.1524  138.7315  112.0139
+pixel1819    115.1643  162.0717   76.1098
+pixel1842    124.0809  139.9805   110.843
+pixel1865    116.3152  158.4943   81.1974
+pixel1869    114.4988  161.9643   74.9796
+pixel1899    123.8915  139.5236  110.8764
+pixel1927    115.1015  155.5065   81.4608
+pixel1928    116.3324  154.7107   84.3791
+pixel1951    128.2528  147.3262  112.3725
+pixel1970    115.6914  157.4582   80.9168
+pixel1989     126.784  142.1276  114.0091
+pixel1997    127.7092  145.4497  112.9386
+pixel2010    111.8483  155.3067   75.6653
+pixel2025    114.6369  151.0698   84.3034
+pixel2033    129.1288  147.6428  113.7142
+pixel2035    128.5886  145.5609  114.4577
+pixel2044    128.5868  146.2038  113.9191
+pixel2089    129.6556  146.1372  115.9331
+pixel2220     113.861  144.1596   88.6347
+pixel2290    114.4216   142.404   91.1237
+
+
+
+
+Time taken to build model (full training data) : 0.92 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0      15477 ( 45%)
+1      18589 ( 55%)
+

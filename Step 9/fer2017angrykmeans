@@ -1,0 +1,143 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.SimpleKMeans -init 0 -max-candidates 100 -periodic-pruning 10000 -min-density 2.0 -t1 -1.25 -t2 -1.0 -N 2 -A "weka.core.EuclideanDistance -R first-last" -I 500 -num-slots 1 -S 10
+Relation:     fer2017angry-weka.filters.unsupervised.instance.Randomize-S12-weka.filters.supervised.attribute.AttributeSelection-Eweka.attributeSelection.CfsSubsetEval -P 1 -E 1-Sweka.attributeSelection.BestFirst -D 1 -N 5-weka.filters.unsupervised.attribute.RandomSubset-N0.5-S21-weka.filters.unsupervised.instance.RemoveDuplicates
+Instances:    34056
+Attributes:   50
+              pixel10
+              pixel83
+              pixel298
+              pixel730
+              pixel784
+              pixel797
+              pixel800
+              pixel834
+              pixel849
+              pixel879
+              pixel880
+              pixel892
+              pixel931
+              pixel940
+              pixel961
+              pixel974
+              pixel1040
+              pixel1274
+              pixel1301
+              pixel1346
+              pixel1362
+              pixel1407
+              pixel1409
+              pixel1420
+              pixel1456
+              pixel1472
+              pixel1488
+              pixel1511
+              pixel1518
+              pixel1556
+              pixel1559
+              pixel1560
+              pixel1561
+              pixel1661
+              pixel1662
+              pixel1704
+              pixel1705
+              pixel1755
+              pixel1756
+              pixel1902
+              pixel1953
+              pixel1959
+              pixel1967
+              pixel2016
+              pixel2047
+              pixel2144
+              pixel2227
+              pixel2238
+              pixel2295
+              emotion
+Test mode:    evaluate on training data
+
+
+=== Clustering model (full training set) ===
+
+
+kMeans
+======
+
+Number of iterations: 19
+Within cluster sum of squared errors: 76953.64573546263
+
+Initial starting points (random):
+
+Cluster 0: 72,147,65,96,161,162,172,135,154,61,49,138,82,112,34,163,75,108,58,71,121,120,129,128,124,177,28,190,138,68,110,167,186,106,126,92,67,91,133,133,165,174,9,11,157,154,114,152,13,Disgust
+Cluster 1: 18,117,33,46,127,186,74,117,62,174,163,191,173,186,59,197,192,158,45,30,202,143,191,115,198,151,17,178,110,187,148,123,98,154,155,202,183,128,139,94,173,91,12,15,145,152,192,149,8,Angry
+
+Missing values globally replaced with mean/mode
+
+Final cluster centroids:
+                       Cluster#
+Attribute   Full Data         0         1
+            (34056.0) (16084.0) (17972.0)
+=========================================
+pixel10      110.5703   91.2522  127.8591
+pixel83      117.4411   96.5054  136.1774
+pixel298     123.6339  102.1766   142.837
+pixel730     122.8363   98.5052  144.6114
+pixel784     115.6573   87.9044  140.4947
+pixel797      122.607   91.9344  150.0574
+pixel800     114.7514   86.9893   139.597
+pixel834     119.6352   90.0497  146.1126
+pixel849     112.5286   85.8214  136.4302
+pixel879     112.5561   85.5531  136.7223
+pixel880     115.6447   87.2215  141.0819
+pixel892     126.9668   95.2736  155.3305
+pixel931     129.8283  100.2551  156.2948
+pixel940     132.0727  100.7202  160.1315
+pixel961     116.6963   91.4665  139.2757
+pixel974     127.9451  101.2219   151.861
+pixel1040    140.0093  111.3886  165.6234
+pixel1274    158.4225  132.7161  181.4284
+pixel1301    125.8821  100.1385  148.9213
+pixel1346    119.6051   93.2647  143.1784
+pixel1362    148.8879  121.5842  173.3232
+pixel1407    152.9465  125.4807  177.5269
+pixel1409    148.0971  119.6204  173.5822
+pixel1420    144.6205  114.6046  171.4831
+pixel1456    147.6932  119.1944   173.198
+pixel1472    148.1932  117.7193  175.4657
+pixel1488    120.2109   93.6525  143.9794
+pixel1511    139.0122  107.4232  167.2827
+pixel1518    143.9533  112.8019  171.8323
+pixel1556    137.5819  108.1865  163.8893
+pixel1559     136.632  104.5352   165.357
+pixel1560    136.8579  104.1161  166.1601
+pixel1561    137.0114  104.1869  166.3875
+pixel1661    137.0292  105.6924  165.0739
+pixel1662    137.2733   106.028  165.2362
+pixel1704    132.0854  101.9692  159.0379
+pixel1705    132.2085  101.7637   159.455
+pixel1755    127.8181   97.9215   154.574
+pixel1756    127.8876   97.6629  154.9371
+pixel1902    126.0277   97.5437  151.5195
+pixel1953    128.9157   98.2892  156.3248
+pixel1959    116.6828     88.35  142.0392
+pixel1967      115.69   90.7373  138.0213
+pixel2016    117.3727   91.7526  140.3014
+pixel2047    128.4674   98.6541  155.1487
+pixel2144    124.5567   94.2332  151.6946
+pixel2227    126.4531  100.3077  149.8519
+pixel2238    124.2264   94.3801  150.9372
+pixel2295     109.564   83.0015   133.336
+emotion         Angry     Angry     Angry
+
+
+
+
+Time taken to build model (full training data) : 0.97 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0      16084 ( 47%)
+1      17972 ( 53%)
+

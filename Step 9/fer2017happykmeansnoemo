@@ -1,0 +1,119 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.SimpleKMeans -init 0 -max-candidates 100 -periodic-pruning 10000 -min-density 2.0 -t1 -1.25 -t2 -1.0 -N 2 -A "weka.core.EuclideanDistance -R first-last" -I 500 -num-slots 1 -S 10
+Relation:     fer2017happy-weka.filters.unsupervised.instance.Randomize-S69-weka.filters.supervised.attribute.AttributeSelection-Eweka.attributeSelection.CfsSubsetEval -P 1 -E 1-Sweka.attributeSelection.BestFirst -D 1 -N 5-weka.filters.unsupervised.attribute.RandomSubset-N0.5-S21-weka.filters.unsupervised.instance.RemoveDuplicates-weka.filters.unsupervised.attribute.Remove-R39
+Instances:    34039
+Attributes:   38
+              pixel0
+              pixel47
+              pixel595
+              pixel641
+              pixel867
+              pixel924
+              pixel1153
+              pixel1392
+              pixel1461
+              pixel1467
+              pixel1568
+              pixel1583
+              pixel1600
+              pixel1607
+              pixel1618
+              pixel1644
+              pixel1646
+              pixel1665
+              pixel1798
+              pixel1802
+              pixel1846
+              pixel1894
+              pixel1896
+              pixel1898
+              pixel1939
+              pixel1941
+              pixel1942
+              pixel1988
+              pixel1991
+              pixel1992
+              pixel1994
+              pixel2039
+              pixel2041
+              pixel2088
+              pixel2112
+              pixel2183
+              pixel2232
+              pixel2258
+Test mode:    evaluate on training data
+
+
+=== Clustering model (full training set) ===
+
+
+kMeans
+======
+
+Number of iterations: 19
+Within cluster sum of squared errors: 56728.09664488047
+
+Initial starting points (random):
+
+Cluster 0: 162,163,125,135,73,39,29,25,44,113,131,4,78,83,90,75,69,84,114,80,47,27,47,106,43,40,41,44,42,51,46,41,46,35,58,5,9,74
+Cluster 1: 253,255,218,213,98,188,190,255,229,188,196,255,186,239,230,183,203,223,206,86,199,205,180,42,204,201,217,184,191,180,224,179,218,191,255,174,210,255
+
+Missing values globally replaced with mean/mode
+
+Final cluster centroids:
+                       Cluster#
+Attribute   Full Data         0         1
+            (34039.0) (15763.0) (18276.0)
+=========================================
+pixel0       118.8683   98.0167  136.8528
+pixel47      117.8324  100.4933  132.7873
+pixel595     147.6713  122.0483  169.7711
+pixel641     134.3617  109.4837  155.8188
+pixel867     114.2093   93.3365   132.212
+pixel924     121.6121   99.6763  140.5317
+pixel1153    119.2523   95.7718  139.5042
+pixel1392    120.5221   96.5211  141.2229
+pixel1461    139.6163    110.15  165.0309
+pixel1467    140.0894  113.3341  163.1657
+pixel1568    143.1927  116.7974  165.9586
+pixel1583    117.9438   99.7195  133.6621
+pixel1600    140.5713  111.2373  165.8717
+pixel1607    136.1336  106.0141  162.1116
+pixel1618    139.5597   113.324  162.1878
+pixel1644    137.2594  107.4821  162.9422
+pixel1646    137.4474  107.2002  163.5355
+pixel1665     137.041  110.5519  159.8878
+pixel1798    125.0053   93.3192  152.3345
+pixel1802    125.0692   94.8909   151.098
+pixel1846    124.1279   90.4194  153.2015
+pixel1894    124.5027   88.2137   155.802
+pixel1896    124.8845   89.6813  155.2472
+pixel1898    124.2636   90.6438  153.2607
+pixel1939    125.5715   89.4205  156.7516
+pixel1941    125.1368   87.3707  157.7101
+pixel1942    125.4688   87.5914  158.1379
+pixel1988    126.7239   89.4859  158.8416
+pixel1991     126.896   88.2713  160.2098
+pixel1992    126.7855   88.6026  159.7182
+pixel1994    126.7352   90.6431  157.8646
+pixel2039    128.3294   90.4163  161.0294
+pixel2041     128.288    91.482   160.033
+pixel2088     129.522    93.255  160.8023
+pixel2112    116.8255   93.1576  137.2391
+pixel2183    129.9931    95.234  159.9728
+pixel2232     128.635   95.3537    157.34
+pixel2258    114.5222   91.4193  134.4484
+
+
+
+
+Time taken to build model (full training data) : 0.75 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0      15763 ( 46%)
+1      18276 ( 54%)
+

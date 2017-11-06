@@ -1,0 +1,90 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.K2 -- -P 2 -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+Relation:     fer2017-weka.filters.unsupervised.attribute.Remove-R2-11,13-14,16-17,19-22,24-101,103-199,201-224,226-242,244-500,502,504-507,509-549,551-552,554-575,577-647,650-694,698-767,769,771-773,775-791,793,795-810,812-840,842-911,913-915,917-1067,1069-1109,1111-1113,1115-1359,1361,1363,1365-1407,1410,1412-1455,1457,1459-1504,1506-1519,1521-1557,1559-1560,1564-1662,1664-1816,1818-1847,1851-1895,1897,1901-1928,1931-1943,1945,1948-1992,1995-2026,2028-2042,2044-2119,2121-2165,2167-2304-weka.filters.unsupervised.attribute.Remove-R9-13,15,18,20,24,26,30-31,33-34,43-47,49-51,55-57,63-66-weka.filters.unsupervised.attribute.Remove-R4,6-7,10-14,18,20,22-23,25-30,33,35-36-weka.filters.unsupervised.instance.RemoveDuplicates
+Instances:    34091
+Attributes:   16
+              emotion
+              pixel10
+              pixel13
+              pixel21
+              pixel223
+              pixel551
+              pixel772
+              pixel792
+              pixel839
+              pixel914
+              pixel1362
+              pixel1409
+              pixel1896
+              pixel1897
+              pixel1944
+              pixel1992
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Bayes Network Classifier
+not using ADTree
+#attributes=16 #classindex=0
+Network structure (nodes followed by parents)
+emotion(7): 
+pixel10(3): emotion 
+pixel13(3): emotion pixel10 
+pixel21(3): emotion pixel13 
+pixel223(4): emotion pixel21 
+pixel551(4): emotion pixel223 
+pixel772(3): emotion pixel10 
+pixel792(4): emotion pixel551 
+pixel839(4): emotion pixel792 
+pixel914(3): emotion pixel772 
+pixel1362(4): emotion pixel551 
+pixel1409(4): emotion pixel1362 
+pixel1896(4): emotion pixel1409 
+pixel1897(5): emotion pixel1896 
+pixel1944(5): emotion pixel1896 
+pixel1992(5): emotion pixel1944 
+LogScore Bayes: -530806.4053194798
+LogScore BDeu: -535716.2587618157
+LogScore MDL: -534678.2903608293
+LogScore ENTROPY: -528838.9070838408
+LogScore AIC: -529957.9070838408
+
+
+Time taken to build model: 0.75 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       10251               30.0695 %
+Incorrectly Classified Instances     23840               69.9305 %
+Kappa statistic                          0.1171
+Mean absolute error                      0.2257
+Root mean squared error                  0.338 
+Relative absolute error                 96.0037 %
+Root relative squared error             98.5777 %
+Total Number of Instances            34091     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.058    0.031    0.233      0.058    0.093      0.051    0.586     0.182     Angry
+                 0.000    0.000    0.000      0.000    0.000      -0.001   0.575     0.019     Disgust
+                 0.065    0.038    0.222      0.065    0.100      0.048    0.573     0.175     Fear
+                 0.667    0.468    0.332      0.667    0.443      0.174    0.650     0.383     Happy
+                 0.294    0.172    0.266      0.294    0.279      0.118    0.618     0.244     Sad
+                 0.305    0.076    0.299      0.305    0.302      0.227    0.720     0.255     Suprise
+                 0.173    0.101    0.271      0.173    0.211      0.087    0.607     0.238     Neutral
+Weighted Avg.    0.301    0.185    0.272      0.301    0.257      0.117    0.622     0.259     
+
+=== Confusion Matrix ===
+
+    a    b    c    d    e    f    g   <-- classified as
+  277    1  251 2270 1092  367  481 |    a = Angry
+   24    0   28  248   74   40   47 |    b = Disgust
+  219    0  314 2315  936  574  477 |    c = Fear
+  190    0  220 5872 1180  522  816 |    d = Happy
+  221    2  253 2612 1747  380  718 |    e = Sad
+  107    0  182 1278  424  995  280 |    f = Suprise
+  153    0  168 3118 1124  448 1046 |    g = Neutral
+
