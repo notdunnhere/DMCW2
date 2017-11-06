@@ -17,9 +17,9 @@ def main(argv):
 	nmax = 0;
 	
 	o.write( "@relation " + newfilename[0] + "\n" )
-	o.write( "@ATTRIBUTE 'emotion' {'Angry', 'Disgust', 'Fear', 'Happy', 'Sad', 'Suprise', 'Neutral'}\n" )
+	o.write( "@ATTRIBUTE 'emotion' {'Angry', 'Disgust', 'Fear', 'Happy', 'Sad', 'Surprise', 'Neutral'}\n" )
 	
-	dict = {'0' : "'Angry'", '1' : "'Disgust'", '2' : "'Fear'", '3' : "'Happy'", '4' : "'Sad'", '5' : "'Suprise'", '6' : "'Neutral'"}
+	dict = {'0' : "'Angry'", '1' : "'Disgust'", '2' : "'Fear'", '3' : "'Happy'", '4' : "'Sad'", '5' : "'Surprise'", '6' : "'Neutral'"}
 	
 	
 	for x in range(0, 2303):
