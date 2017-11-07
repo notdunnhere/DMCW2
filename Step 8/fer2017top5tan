@@ -1,0 +1,130 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.TAN -- -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+Relation:     fer2017-weka.filters.unsupervised.attribute.Remove-R2-11,13-14,16-17,19-22,25-37,39-84,86-91,93-101,103-112,114-199,201-224,226-242,244-284,286-500,502,504-507,509-549,551-552,554-575,577-600,602-647,650-694,698-723,725-767,769,771-791,793,795-810,812-840,842-911,913-915,917-1067,1069-1109,1111-1113,1115-1359,1361,1363,1365-1407,1410,1412-1457,1459-1465,1467-1504,1506-1519,1521-1557,1559-1560,1564-1816,1818-1847,1849-1895,1897,1899,1901-1928,1931-1942,1945-1992,1995-2026,2028-2040,2042,2044-2119,2121-2165,2167-2304-weka.filters.unsupervised.attribute.Remove-R7-9,11,14-19,21,25,27,31,33,37-38,40-41,50-53,55,58-61,65-69-weka.filters.unsupervised.instance.RemoveDuplicates
+Instances:    34092
+Attributes:   36
+              emotion
+              pixel10
+              pixel13
+              pixel16
+              pixel21
+              pixel22
+              pixel100
+              pixel198
+              pixel223
+              pixel551
+              pixel599
+              pixel646
+              pixel647
+              pixel694
+              pixel722
+              pixel766
+              pixel768
+              pixel792
+              pixel839
+              pixel910
+              pixel914
+              pixel1112
+              pixel1362
+              pixel1406
+              pixel1407
+              pixel1409
+              pixel1456
+              pixel1464
+              pixel1503
+              pixel1518
+              pixel1815
+              pixel1894
+              pixel1896
+              pixel1942
+              pixel1991
+              pixel1992
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Bayes Network Classifier
+not using ADTree
+#attributes=36 #classindex=0
+Network structure (nodes followed by parents)
+emotion(7): 
+pixel10(3): emotion pixel13 
+pixel13(3): emotion pixel16 
+pixel16(3): emotion pixel21 
+pixel21(3): emotion pixel22 
+pixel22(3): emotion pixel223 
+pixel100(4): emotion pixel198 
+pixel198(4): emotion pixel10 
+pixel223(4): emotion pixel551 
+pixel551(4): emotion 
+pixel599(4): emotion pixel551 
+pixel646(4): emotion pixel647 
+pixel647(4): emotion pixel599 
+pixel694(4): emotion pixel646 
+pixel722(5): emotion pixel100 
+pixel766(4): emotion pixel910 
+pixel768(4): emotion pixel722 
+pixel792(4): emotion pixel694 
+pixel839(4): emotion pixel792 
+pixel910(3): emotion pixel1815 
+pixel914(3): emotion pixel722 
+pixel1112(4): emotion pixel1406 
+pixel1362(4): emotion pixel1409 
+pixel1406(4): emotion pixel1407 
+pixel1407(4): emotion pixel694 
+pixel1409(4): emotion pixel1456 
+pixel1456(4): emotion pixel1503 
+pixel1464(4): emotion pixel792 
+pixel1503(4): emotion pixel1407 
+pixel1518(5): emotion pixel792 
+pixel1815(4): emotion pixel1518 
+pixel1894(4): emotion pixel1942 
+pixel1896(5): emotion pixel1894 
+pixel1942(4): emotion pixel1991 
+pixel1991(5): emotion pixel1407 
+pixel1992(5): emotion pixel1991 
+LogScore Bayes: -1059935.8368402682
+LogScore BDeu: -1072482.6392169923
+LogScore MDL: -1070177.7041490704
+LogScore ENTROPY: -1055388.7329982338
+LogScore AIC: -1058222.732998234
+
+
+Time taken to build model: 1.81 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       10791               31.6526 %
+Incorrectly Classified Instances     23301               68.3474 %
+Kappa statistic                          0.1516
+Mean absolute error                      0.2195
+Root mean squared error                  0.3384
+Relative absolute error                 93.3801 %
+Root relative squared error             98.6971 %
+Total Number of Instances            34092     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.107    0.051    0.253      0.107    0.150      0.082    0.593     0.194     Angry
+                 0.000    0.001    0.000      0.000    0.000      -0.004   0.624     0.022     Disgust
+                 0.124    0.074    0.218      0.124    0.158      0.064    0.596     0.190     Fear
+                 0.583    0.339    0.374      0.583    0.456      0.218    0.672     0.419     Happy
+                 0.282    0.154    0.278      0.282    0.280      0.127    0.631     0.255     Sad
+                 0.367    0.091    0.300      0.367    0.330      0.253    0.736     0.267     Suprise
+                 0.278    0.139    0.302      0.278    0.289      0.143    0.638     0.270     Neutral
+Weighted Avg.    0.317    0.165    0.293      0.317    0.293      0.149    0.642     0.281     
+
+=== Confusion Matrix ===
+
+    a    b    c    d    e    f    g   <-- classified as
+  505    9  414 1730  970  399  712 |    a = Angry
+   33    0   58  200   71   48   51 |    b = Disgust
+  327    8  599 1603  881  740  677 |    c = Fear
+  397    7  479 5129 1039  698 1051 |    d = Happy
+  334    6  499 2006 1676  377 1035 |    e = Sad
+  153    5  324  860  355 1200  370 |    f = Suprise
+  248    8  381 2169 1034  535 1682 |    g = Neutral
+
